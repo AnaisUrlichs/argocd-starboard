@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/AnaisUrlichs/react-article-display.git
-    path: charts/example-chart
+    path: manifests
     directory:
       recurse: true
   destination:
