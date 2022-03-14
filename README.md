@@ -1,0 +1,1 @@
+ArgoCD to manage our security tools, workload, and monitoring stack

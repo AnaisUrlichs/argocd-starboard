@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: react
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/AnaisUrlichs/react-article-display
+    path: charts/example-chart
+    targetRevision: 0.2.0
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: app
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Replace=true
