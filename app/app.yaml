@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/AnaisUrlichs/react-article-display
+    repoURL: https://github.com/AnaisUrlichs/react-article-display.git
     path: charts/example-chart
     directory:
       recurse: true
